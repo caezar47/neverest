@@ -1,0 +1,44 @@
+<footer class="{{prefix}}block">	
+	<div class="{{prefix}}container container">
+		<div class="{{prefix}}row">
+			<div>
+				<a href="/" class="{{prefix}}logotip" {{link_attr}}>
+					<img src="{{path.img}}/default/logotip-footer.png" class="img-responsive" alt="">
+				</a>
+			</div>
+			<ul class="{{prefix}}nav">
+				{% for n in nav %}
+				<li class="{{prefix}}nav-item">
+					<a href="{{n.link}}" class="{{prefix}}nav-link">{{n.name}}</a>
+				</li>
+				{% endfor %}
+			</ul>
+
+			<div>
+				<button type="button" class="{{prefix}}subscribe">
+					<span>Подписаться на рассылку</span>
+					{% include "../svg-sprite/svg.twig" with {icon:'icon-send'} %}
+				</button>
+				<div class="{{prefix}}contacts-item">
+					<a href="mailto:{{contacts.email}}" class="{{prefix}}contacts">
+						{% include "../svg-sprite/svg.twig" with {icon:'icon-email'} %}
+						{{contacts.email}}
+					</a>
+				</div>
+				<div class="{{prefix}}contacts-item">
+					<div class="{{prefix}}contacts">
+						{% include "../svg-sprite/svg.twig" with {icon:'icon-address'} %}
+						{{contacts.address}}
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="{{prefix}}copyright">
+				2020 © Neverest
+			</div>
+			<div class="{{prefix}}privacy">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</div>	
+	</div>
+</footer>

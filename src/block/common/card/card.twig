@@ -1,0 +1,26 @@
+{% if view == "adv" %}
+	{% for value in list %}	
+	<div class="{{prefix}}item  {{mod}}">
+		<div class="{{prefix}}header  {{mod}}">
+			<picture class="{{prefix}}preview  {{mod}}">
+				<img src="{{value.img}}" class="img-responsive" alt="">
+			</picture>
+			<p class="{{prefix}}heading  {{mod}}">{{value.name}}</p>
+		</div>
+		{% if value.note %}
+			<div class="{{prefix}}note  {{mod}}">{{value.note}}</div>
+		{% endif %}
+	</div>
+	{% endfor %}
+{% endif %}
+
+{% if view == "catalog" %}
+	{% for value in list %}	
+	<a href="{{value.link}}" class="{{prefix}}item  {{mod}}">
+		<picture class="{{prefix}}preview  {{mod}}">
+			<img src="{{value.img}}" class="img-responsive" alt="">
+		</picture>
+		<p class="{{prefix}}heading  {{mod}}">{{value.name}}</p>
+	</a>
+	{% endfor %}
+{% endif %}
