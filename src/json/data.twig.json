@@ -1,37 +1,17 @@
 {
 	"contacts":{
-		"name":"<span>invest</span>sovetnik",
-		"domain":"investsovetnik.net",
-		"domain_link":"http://investsovetnik.net/",
+		"name":"neverest",
+		"domain":"neverest.mws.agency",
+		"domain_link":"http://neverest.mws.agency/",
 		"color":"#5ab0ff",
 		"email":"info@neverest.mws.agency",
 		"address":"г. Москва, ул. Пушкина 19",
 		"agreement":"./docs/agreement.pdf"
-
-
-	},
-	"soc":{
-		"vk":"https://vk.com/investsovetnik",
-		"tg":"https://t.me/investsovetniknet",
-		"inst":"https://www.instagram.com/polotovskiile/"
 	},
 	"page":{
 		"index":"./",
-		"docs":"./docs.html",
-		"services_card1":"./services-card1.html",
-		"services_card2":"./services-card2.html",
-		"services_card3":"./services-card3.html",
-		"uikit":"./uikit.html"
-	},
-	"block":{
-		"header":"index-header",
-		"blockquote":"index-blockquote",
-		"adv":"index-adv",
-		"about":"index-about",
-		"promo":"index-promo",
-		"services":"index-services",
-		"step":"index-step",
-		"faq":"index-faq"
+		"catalog":"./catalog.html",
+		"catalog_card":"./catalog-card.html"
 	},
 	"prefix":{
 		"section":"section__",
