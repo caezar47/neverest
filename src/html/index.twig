@@ -6,7 +6,7 @@
 	<body>
         <div class="wrapper1  header_bgcolored long_banner wides_menu front_page basket_normal basket_fill_WHITE side_LEFT block_side_NORMAL catalog_icons_N banner_auto  mheader-v1 header-v20 header-font-lower_N regions_N title_position_LEFT fill_ footer-v5 front-vindex1 mfixed_Y mfixed_view_always title-v2 lazy_Y with_phones compact-catalog normal-catalog-img landing-normal big-banners-mobile-slider bottom-icons-panel-N compact-breadcrumbs-N catalog-delayed-btn-N  ">
             
-        {# {% include "../block/common/navbar/navbar.twig" with {
+        {% include "../block/common/navbar/navbar.twig" with {
             prefix:"navbar__", 
             mod:"is--scroll",
             link:"",
@@ -39,7 +39,7 @@
                 },
             ],
         } %}
-        <img src="{{path.img}}/default/banner.jpg" alt="">  #}
+        <img src="{{path.img}}/default/banner.jpg" style="margin: 0 auto" alt=""> 
 
         <main class="{{prefix.section}}wrap  is--page-index">
             {% include "../block/page/index.twig" with {

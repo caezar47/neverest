@@ -1,3 +1,26 @@
+.btn-primary(){
+	.btn-clearfix();
+	font-family: @site_ff_custom;
+	.heading5();
+	border-radius: @btn_radius!important;
+	font-weight: 700;
+	display: inline-flex;
+	align-items: center; 
+	justify-content: center;	
+	background-color: @primary;
+	text-align: center;	
+	color: @white;
+	padding: 10px 25px;
+	border: 1px solid @primary;
+	.media-breakpoint-up(@lg; {	
+		padding: 15px 45px;
+	});
+	&:hover{
+		color: @primary;
+		background-color: @white;
+		border-color: @white;
+	}
+}
 .btn__{
 	&group{
 		display: flex;
@@ -10,23 +33,34 @@
 			margin-left: @container_gap;
 			margin-right: @container_gap;
 		}
-		.media-breakpoint-up(@sm; {
-			flex-wrap: nowrap;
-		});
 		&.is--full{
 			& > *{
-				flex: 1 1 0;
+				flex: 1 1 100%;
 			}
 		}
+		.fancy{
+			opacity: 0;
+			video{
+				width: 1px;
+			}
+		}
+		.media-breakpoint-up(@sm; {
+			flex-wrap: nowrap;
+			&.is--full{
+				& > *{
+					flex: 1 1 0;
+				}
+			}
+		});
 	}
 	&item{
 		.btn-clearfix();
 		font-family: @site_ff_custom;
 		position: relative;
+		z-index: 5;
 		.heading5();
 		border-radius: @btn_radius;
 		font-weight: 700;
-		position: relative;	
 		display: inline-flex;
 		align-items: center; 
 		justify-content: center;	
@@ -51,6 +85,8 @@
 		}
 		&-icon{
 			display: block;
+			position: relative;
+			z-index: 5;
 			margin-right: 20px;
 			&.is--icon-play{
 				width: 19px;
@@ -82,9 +118,6 @@
 		color: @primary;
 		font-weight: 700;
 		.heading5();
-		
-
-		
 		&-icon{
 			display: block;
 			margin-right: 20px;

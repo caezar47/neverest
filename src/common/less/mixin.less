@@ -32,15 +32,15 @@
 }
 .heading4(){
 	font-size: 1.5rem;
-	line-height: 142%;
+	line-height: 140%;
 }
 .heading5(){
-	font-size: 1.250rem;
+	font-size: 1.250rem!important;
 	line-height: 140%;
 }
 .heading6(){
-	font-size: @site_fs;
-	line-height: 144%;
+	font-size: 0.75rem;
+	line-height: 140%;
 }
 .text(){
 	font-size: @site_fs;
@@ -96,6 +96,14 @@
 		background-color: @primary;
 		border-radius: @r;
 	}
+}
+.container() {
+	width: 100%!important;
+	max-width: @container!important;
+	padding-left: @container_gap; //20px
+	padding-right: @container_gap; //20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 //===== azbn =====//
 #site {
