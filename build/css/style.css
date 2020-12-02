@@ -295,14 +295,10 @@ body {
   font-size: initial!important;
   line-height: initial!important;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+/*
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}*/
 i,
 em {
   font-style: italic;
@@ -643,6 +639,40 @@ p {
     margin-bottom: 40px;
   }
 }
+.viewed_product_block.no_fill .block-item {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .viewed_product_block.no_fill .block-item__wrapper {
+    padding: 20px!important;
+  }
+}
+.viewed_product_block.no_fill .block-item__title {
+  font-size: 1.25rem !important;
+  line-height: 140%;
+}
+@media (min-width: 1200px) {
+  .viewed_product_block.no_fill .block-item__image--wh90 {
+    width: 180px!important;
+    height: 180px!important;
+  }
+}
+.viewed_product_block.no_fill .block-item__image--wh90 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (min-width: 1200px) {
+  .viewed_product_block.no_fill .block-item__info {
+    padding-left: 20px!important;
+  }
+}
 .side-block {
   background-color: #fff;
   border-radius: 10px;
@@ -714,6 +744,10 @@ p {
   grid-template-columns: 100%;
   grid-gap: 30px;
 }
+.catalog_page .catalog_block.items.row.flexbox .item {
+  height: auto;
+  min-height: initial;
+}
 .catalog_page .catalog_block.items.row.flexbox > * {
   width: auto!important;
 }
@@ -760,6 +794,7 @@ p {
 }
 .catalog_block .catalog_item {
   background: none;
+  height: auto!important;
 }
 .catalog_block .catalog_item > div {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1111,39 +1146,8 @@ p {
 .form_body div.form-control {
   background: none;
 }
-.block-item {
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  border-radius: 10px !important;
-  overflow: hidden;
-}
-@media (min-width: 1200px) {
-  .block-item__wrapper {
-    padding: 20px!important;
-  }
-}
-.block-item__title {
-  font-size: 1.25rem !important;
-  line-height: 140%;
-}
-@media (min-width: 1200px) {
-  .block-item__image--wh90 {
-    width: 180px!important;
-    height: 180px!important;
-  }
-}
-.block-item__image--wh90 img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-}
-@media (min-width: 1200px) {
-  .block-item__info {
-    padding-left: 20px!important;
-  }
+.switch-item-block {
+  background: none;
 }
 .top_slider_wrapp .flexslider .banner_title .head-title {
   font-size: 3rem;
